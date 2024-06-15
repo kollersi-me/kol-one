@@ -13,7 +13,7 @@ export default function Folders() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
-
+       <center> <img src="https://kollersi.com/wp-content/uploads/2024/05/kollersi_logo_2024_tran-1024x285.png"></center>
 
       <main className="flex w-full flex-1 flex-col bg-gray-50 dark:bg-gray-800">
        
