@@ -22,7 +22,7 @@ export default function Folders() {
           <nav className="mb-4 flex items-center justify-between space-x-3 px-4 sm:px-0 sm:pl-1">
          
             <SwitchLayout />
-          </nav>
+       
           <FileListing query={query} />
         </div>
       </main>
