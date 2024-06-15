@@ -13,7 +13,6 @@ export default function Folders() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
-      <a href="https://kollersi.com" target="_blank" ><img src="../kollersi_logo_2024.png"></a>
 
       <main className="flex w-full flex-1 flex-col bg-gray-50 dark:bg-gray-800">
        
