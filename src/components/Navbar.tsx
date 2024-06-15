@@ -59,7 +59,7 @@ const Navbar = () => {
 
      
       <div className="mx-auto flex w-full items-center justify-between space-x-4 px-4 py-1">
-        <Link href="https://kollersi.com" passHref className="flex items-center space-x-2 py-2 hover:opacity-80 dark:text-white md:p-2">
+        <Link target="_blank" href="https://kollersi.com" passHref className="flex items-center space-x-2 py-2 hover:opacity-80 dark:text-white md:p-2">
           <Image src={siteConfig.icon} alt="icon" width="100" height="25" priority />
         </Link>
 
@@ -67,16 +67,7 @@ const Navbar = () => {
         
           {siteConfig.links.length !== 0 &&
             siteConfig.links.map((l: { name: string; link: string }) => (
-              <a
-                key={l.name}
-                href={l.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 hover:opacity-80 dark:text-white"
-              >
-                <FontAwesomeIcon icon={['fab', l.name.toLowerCase() as IconName]} />
-                <span className="hidden text-sm font-medium md:inline-block">{l.name}</span>
-              </a>
+
             ))}
 
           {siteConfig.email && (
