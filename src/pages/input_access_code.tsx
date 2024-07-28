@@ -21,7 +21,7 @@ export default function InputAccessCode() {
       const result = await response.json();
 
       if (result.success && code === result.data.trim()) { // Trim để loại bỏ khoảng trắng
-        setCookie('validated', 'true', { path: '/', maxAge: 86400 });
+        setCookie('validated', 'true', { path: '/', maxAge: 604800 });
         const redirectUrl = redirect ? decodeURIComponent(redirect as string) : '/';
         router.push(redirectUrl);
       } else {
