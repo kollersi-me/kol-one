@@ -157,21 +157,6 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnText="VLC"
             btnImage="/players/vlc.png"
           />
-          <DownloadButton
-            onClickCallback={() => window.open(`vlc://https://vip.kollersi.com/api/raw?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)}
-            btnText="VLC"
-            btnImage="/players/vlc.png"
-          />
-          <DownloadButton
-            onClickCallback={() => window.open(`potplayer://${getBaseUrl()}${videoUrl}`)}
-            btnText="PotPlayer"
-            btnImage="/players/potplayer.png"
-          />
-          <DownloadButton
-            onClickCallback={() => window.open(`nplayer-http://${window?.location.hostname ?? ''}${videoUrl}`)}
-            btnText="nPlayer"
-            btnImage="/players/nplayer.png"
-          />
         </div>
       </DownloadBtnContainer>
     </>
