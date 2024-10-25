@@ -158,6 +158,11 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnImage="/players/vlc.png"
           />
           <DownloadButton
+            onClickCallback={() => window.open(`vlc://${getBaseUrl()}/api/raw?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)}
+            btnText="VLC"
+            btnImage="/players/vlc.png"
+          />
+          <DownloadButton
             onClickCallback={() => window.open(`potplayer://${getBaseUrl()}${videoUrl}`)}
             btnText="PotPlayer"
             btnImage="/players/potplayer.png"
