@@ -1,3 +1,8 @@
 module.exports = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  // Thêm target để build cho edge
+  target: 'serverless',
+  experimental: {
+    runtime: 'edge'
+  }
 }
